@@ -1,2 +1,3 @@
 # tour-plan
-Проект от Glo Academy.
+
+Проект от Glo Academy. Пурнемцев Семен
