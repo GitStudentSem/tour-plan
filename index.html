@@ -120,25 +120,31 @@
       </div>
       <!-- hotel-info -->
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img class="swiper-slide__img" src="img/slide.jpg" alt="slide"></div>
-              <div class="swiper-slide"><img class="swiper-slide__img" src="img/slide-2.jpg" alt="slide"></div>
-              <div class="swiper-slide"><img class="swiper-slide__img" src="img/slide-3.jpg" alt="slide"></div>
-              <div class="swiper-slide"><img class="swiper-slide__img" src="img/slide-4.jpg" alt="slide"></div>
-              <div class="swiper-slide"><img class="swiper-slide__img" src="img/slide-5.jpg" alt="slide"></div>
+        <!-- Slider main container -->
+        <div class="swiper-container hotel-slider hotel__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide.jpg" alt="slide">
             </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide-2.jpg"
+                alt="slide">
+            </div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide-3.jpg"
+                alt="slide">
+            </div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide-4.jpg"
+                alt="slide">
+            </div>
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide-5.jpg"
+                alt="slide">
+            </div>
           </div>
-          <!-- /. swiper-container -->
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
-        <!-- /.slider -->
+        <!-- /. swiper-container -->
         <div class="hotel-right">
           <div class="booking">
             <div class="booking__info">
@@ -173,10 +179,9 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map" id="map"><iframe
+          <div class="map" id="map"><iframe class="map__iframe"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7904.072874462371!2d98.2938412!3d7.8912569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1606300410428!5m2!1sru!2sru"
-              width="347" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe></div>
+              allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
           <!-- /.map -->
         </div>
         <!-- /.hotel-right -->
@@ -195,16 +200,81 @@
         <button class="subscribe__button">Send</button>
       </form>
     </div>
+    <!-- /.newsletter-wrapper -->
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__buttonusername">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and
+                polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to
+                3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was
+                good and support of the staff was also very nice. Location is not good as per atmosphere, it is very
+                nearby most of the popular places but self location in a narrow street is not good. Overall it was a
+                good experience and could recommend. </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="Photo: Kolton Sanders" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__buttonusername">Kolton Sanders</h3>
+                <span class="reviews-slider__date">Stayed 15 Oct, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                  <img src="img/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                exercitationem eligendi libero numquam porro recusandae repellendus. Impedit vel dolore quas
+                voluptatibus libero sint quisquam commodi corrupti soluta cupiditate doloremque enim eos dolores sit,
+                unde laborum consequatur voluptatem, modi corporis at magnam rem fugiat sunt ex? Doloribus nihil a earum
+                hic laboriosam odio esse inventore voluptate aspernatur amet aut assumenda, in nulla, nesciunt adipisci
+                quasi commodi rerum repellendus, animi est? Quasi nemo obcaecati commodi non voluptatem excepturi nisi
+                voluptates vel amet eveniet architecto iure possimus repellat modi quisquam sequi quo eius tempore porro
+                perspiciatis, veniam fugiat nam sed? Aspernatur, sit aut.</p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--prev"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+      <!-- /.swiper-container reviews-slider -->
+    </div>
+    <!-- /.container -->
   </section>
   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=509650ce-da5e-4cfa-92d9-1800b118935d&lang=ru_RU"
     type="text/javascript">
   </script> -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
-
-
-
-
 </body>
 
 </html>
