@@ -574,7 +574,7 @@ template {
   border-radius: 8px;
 }
 
-.swiper-container:after {
+.swiper-slide:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -644,12 +644,14 @@ template {
 }
 
 .booking__start {
+  font-family: 'Nunito', sans-serif;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
 }
 
 .booking__pricetag {
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -657,6 +659,7 @@ template {
 }
 
 .booking__per-room {
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -672,6 +675,7 @@ template {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -690,6 +694,7 @@ template {
 }
 
 .booking__heading {
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -697,6 +702,7 @@ template {
 }
 
 .booking__number {
+  font-family: 'Nunito', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -714,6 +720,7 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -856,7 +863,7 @@ template {
     width: 99px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
