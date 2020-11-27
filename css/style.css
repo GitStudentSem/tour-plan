@@ -625,6 +625,11 @@ template {
   line-height: 13px;
 }
 
+.swiper-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .booking {
   background-color: #0A223D;
   color: #ffffff;
@@ -819,6 +824,7 @@ template {
   height: 100%;
   border: none;
   outline: none;
+  cursor: pointer;
   background-color: #EC1F46;
   color: #ffffff;
 }
@@ -1162,7 +1168,11 @@ template {
     max-width: 576px;
     width: 92%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1211,6 +1221,10 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
   }
   .subscribe {
     width: 100%;
