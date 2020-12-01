@@ -1028,6 +1028,21 @@ template {
   cursor: pointer;
 }
 
+.packages__wrapper-card {
+  display: grid;
+  border: 2px solid red;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.packages__card {
+  border: 2px solid blue;
+}
+
+body {
+  margin: 0;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
