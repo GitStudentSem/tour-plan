@@ -1,3 +1,4 @@
+
 <?php
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
@@ -8,6 +9,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -15,6 +17,7 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -24,7 +27,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -33,7 +36,7 @@ try {
     $mail->Password   = 'SEMARU120399'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('purnemtzev.semen@yandex.ru', 'purnemtzev.semen'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('purnemtzev.semen@yandex.ru', 'Семен Пурнемцев'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('programmSem@yandex.ru');  
@@ -53,4 +56,7 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html'); 
+
+
+
