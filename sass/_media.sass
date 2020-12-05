@@ -78,6 +78,7 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
+      margin-left: 35px
     &__additional
       grid-column: span 2
     &__contact
@@ -107,6 +108,7 @@
           display: none
         &--visible
           display: flex
+
     &__user
       flex-direction: column
       justify-content: center
@@ -120,6 +122,7 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -235,7 +238,6 @@
     margin-left: 0
     &__input
       width: 80%
-
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -272,14 +274,17 @@
         grid-column: 1
         margin-bottom: 20px
     &__additional
-      grid-row: 3
-      grid-column: 1
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+    &__categories
       grid-row: 5
       grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      margin-left: 0
+    &__message
+      margin-bottom: 0
     &__contact
       &-details
         grid-row: 6
@@ -287,13 +292,15 @@
       &-form
         grid-row: 7
         grid-column: 1
-    &__send
-      &-info
-        display: flex
-        flex-direction: column
     &__info
-      order: -1
+      order: 8
+      grid-row: 8
       margin-bottom: 15px
+      width: 100%
+    &__button
+      order: 9
+      grid-row: 9
+      grid-column: 1
     &__payment
       flex-wrap: wrap
       &-text
