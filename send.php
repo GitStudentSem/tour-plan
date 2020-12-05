@@ -17,10 +17,15 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
-
+if ($email) {
+  $title = "Подписка на новости Best Tour Plan";
+  $body = "
+    <h2>Подписка на новости</h2>
+    <b>mail:</b> $email<br>
+  ";
+}
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
