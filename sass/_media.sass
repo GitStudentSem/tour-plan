@@ -95,7 +95,7 @@
   body
     padding-top: 78px
   .navbar
-    &-top
+    &__mobile
       &--fixed
         position: fixed
         left: 0
@@ -108,7 +108,6 @@
           display: none
         &--visible
           display: flex
-
     &__user
       flex-direction: column
       justify-content: center
@@ -196,7 +195,6 @@
           display: none
       &__button
         top: 30px
-
         &--prev
           left: 50%
           margin-left: -85px
@@ -306,3 +304,8 @@
       &-text
         width: 100%
         margin-bottom: 10px
+.modal
+  &__dialog
+    padding: 10px 25px
+  &__button
+    margin-bottom: 15px

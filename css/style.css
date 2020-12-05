@@ -1427,7 +1427,7 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar-top--fixed {
+  .navbar__mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -1680,5 +1680,13 @@ template {
     width: 100%;
     margin-bottom: 10px;
   }
+}
+
+.modal__dialog {
+  padding: 10px 25px;
+}
+
+.modal__button {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
