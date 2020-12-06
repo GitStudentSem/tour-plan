@@ -1032,15 +1032,13 @@ template {
   display: grid;
   border: 2px solid red;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
 }
 
 .packages__card {
-  border: 2px solid blue;
-}
-
-body {
-  margin: 0;
+  border: 2px solid red;
+  background-color: #0A223D;
+  color: #ffffff;
 }
 
 @media (max-width: 1199px) {
