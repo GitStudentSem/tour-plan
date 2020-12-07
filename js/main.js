@@ -62,6 +62,25 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Обработка валидации формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please enter a name",
+          minlength: "At least two characters",
+        },
+        email: {
+          required: "Enter your email",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Enter your phone",
+        },
+      },
+    });
+  });
 });
 
 // ymaps.ready(init);
