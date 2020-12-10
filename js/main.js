@@ -77,10 +77,15 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter your phone",
+          minlength: "Enter your phone number in full",
         },
       },
     });
+    $.validator.methods.email = function (value, element) {
+      return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
+    };
   });
+  AOS.init();
 });
 
 // ymaps.ready(init);
