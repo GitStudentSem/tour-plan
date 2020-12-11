@@ -1,5 +1,5 @@
 .reviews
-  padding: 40px 0 0 0
+  padding: 10px 0 0 0
   &__title
     font-style: normal
     font-weight: bold
@@ -53,29 +53,31 @@
       z-index: 99
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 18px
+        top: 150px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        right: 18px
+        top: 150px
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
-      margin-bottom: 30px
+      margin-bottom: 33px
     &__avatar
       width: 90px
       height: 90px
       border-radius: 50%
       object-fit: cover
       margin-bottom: 9px
-    &__username
+    &__buttonusername
       font-style: normal
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $primary
-      margin-bottom: 10px
+      margin: 0 0 10px 0
     &__date
       font-style: normal
       font-weight: normal
